@@ -1,0 +1,107 @@
+/* 
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+html{
+  box-sizing:border-box;
+}
+
+by doing above css we can make any element to have their own
+.content_box = box-sizing: content-box
+*/
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+hmtl {
+  /* browser defualt font size is 16 px which is equal to 1rem */
+  /* font-size: 16px; */
+  font-size: 62.5%; /* == 10px*/
+}
+
+body {
+  margin: 0;
+  padding: 0;
+}
+/* Main Css below */
+.container {
+  width: 80%;
+  max-width: 992px;
+  background-color: aliceblue;
+  margin-inline: auto;
+  /* min-height: 100vh; */
+}
+.intro-container {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  padding-left: 3rem;
+  color: white;
+  background-color: #23424a;
+}
+
+.intro-heading {
+  width: 80%;
+  max-width: 892px;
+  font-size: 3rem;
+  line-height: 0.9;
+}
+.intro-body {
+  color: white;
+  line-height: 1.4rem;
+  width: 80%;
+  max-width: 892px;
+  text-decoration: none;
+  font-size: 1.125rem;
+  padding: 2rem 0 2rem 0;
+}
+.btn {
+  background-color: #38cfd9;
+  padding: 0.5em 1.5em;
+  border-radius: 2rem;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-weight: 700;
+  font-size: 1.3rem;
+  font-family: serif;
+}
+.container + .container {
+  padding-top: 2rem;
+  padding-bottom: 2rem;
+}
+.container .heading {
+  font-size: 2.25rem;
+  color: hsl(288, 15%, 39%);
+  line-height: 0.1rem;
+}
+
+.container .row {
+  display: flex;
+  gap: 10px;
+  justify-content: space-around;
+}
+
+.container .row .col {
+  text-align: center;
+  max-width: 33%;
+}
+.__rowwrapc1 {
+  background-color: rgb(250, 249, 249);
+}
+.__rowwrapc2,
+.__rowwrapc2 .heading {
+  background-color: #23424a;
+  color: white;
+}
+/* 
+
+padding, margin refers to the font size of the same container or that element.
+
+font-size refers to the font size of the parent.
+*/

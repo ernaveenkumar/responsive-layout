@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.parent {
+  background-color: blue;
+  width: 80%;
+  max-width: 750px;
+  margin-inline: auto;
+  /* margin: 0 auto; */
+}
+.child {
+  background-color: #234244;
+  padding: 50px 0; /*browser default 16px | 16*5 = 80px*/
+  color: white;
+}
+.intro {
+  width: 50%;
+}
